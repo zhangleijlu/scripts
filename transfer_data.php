@@ -5,6 +5,7 @@
  * Date: 2018/4/26
  * Time: 下午4:01
  */
+require "./config.php";
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
 if(strpos($hostname,"instance") !==false){
@@ -13,8 +14,6 @@ if(strpos($hostname,"instance") !==false){
     $new_mysqli = new mysqli("180.76.174.128","root","asdf", "yascmf_base");
 }
 $redis = new Redis();
-$configRedis = new Redis();
-$configRedis->connect("127.0.0.1");
 if(strpos($hostname,"instance") !==false){
     $redis->connect("180.76.174.128");
 }else{
@@ -26,8 +25,7 @@ $new_mysqli->query("set names utf8");
 $sql = "select * from `content_ori_201804_newlife101` WHERE  `transfer_status` = 0";
 
 $ret = $old_mysqli->query($sql);
- $config = $configRedis->get("site_config");
-  $config = unserialize($config);
+  $config = $site_config;
 while ($arr = $ret->fetch_assoc()){
     $ori_content = $arr['content'];
     $ori_title = $arr['title'];
@@ -56,7 +54,7 @@ var_dump($final_data);
 }
 
 function img_transfer($cn_content, $ori_site){
-    echo $cn_content;
+   // echo $cn_content;
 //echo $cn_content;
     $src_list = ['src', 'data-original'];
     $img_urls = [];
@@ -135,7 +133,7 @@ function img_upload($old_url = ''){
     $path_parts = pathinfo($old_url);
 echo $old_url;
     $ext = $path_parts['extension'];
-    $img = '/root/base/image_tmp/flower.'.$ext;
+    $img = $path_parts['dirname']."/".'flower.'.$ext;
     unlink($img);
     file_put_contents($img, file_get_contents($old_url));
 if(!file_exists($img)){
