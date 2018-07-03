@@ -6,6 +6,9 @@
  * Time: 下午4:01
  */
 require "./config.php";
+require "./selector.inc";
+require "./garbageRemove.php";
+
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
 if(strpos($hostname,"instance") !==false){
@@ -34,11 +37,12 @@ echo $arr['title'];
     $cn_title = transfer_cn($ori_title);
     $cn_content = transfer_cn($ori_content);
     $no_img_content = img_transfer($cn_content, $ori_site);
-    $three_step_content = inner_url_transfer($no_img_content);
+    $three_step_content = inner_url_transfer($no_img_content, $config[$ori_site]['cat_slug']);
     $four_step_content = outer_url_transfer($three_step_content);
     $final_data = [];
     $final_data['title'] = $cn_title;
-    $final_data['content'] = garbageRemove($four_step_content);
+    $garbageRemove = new garbageRemove();
+    $final_data['content'] = $garbageRemove->remove($four_step_content);
     $final_data['slug'] =  $arr['slug'];
     $final_data['sub_cid'] =  $arr['slug'];
     
@@ -92,7 +96,7 @@ function transfer_cn($text){
 }
 
 
-function inner_url_transfer($content){
+function inner_url_transfer($content, $cat_slug){
     $pattern="/<a.*?href=[\'|\"](.*?lm_news_view.php\?.*?cid=(\d+).*?)[\'|\"].*?\?>/";
     preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
     foreach ($match as $k=>$v){
@@ -101,7 +105,7 @@ function inner_url_transfer($content){
         global $old_mysqli;
         $ret = $old_mysqli->query($sql);
         $slug=$ret->fetch_assoc()['id'];
-        $new = "http://www.zawenblog.com/health/$slug";
+        $new = "http://www.zawenblog.com/$cat_slug/$slug";
         $content = str_replace($new, $v[1], $content);
     }
     return $content;
@@ -120,14 +124,7 @@ function outer_url_transfer($content){
     return $content;
 }
 
-function garbageRemove($content){
-    $garbage = ["脸书粉丝页", "部落格"];
-    foreach ($garbage as $k=>$v){
-            $content = str_replace("", $v, $content);
 
-    }
-    return $content;
-}
 
 function img_upload($old_url = ''){
     $path_parts = pathinfo($old_url);
@@ -152,7 +149,7 @@ while(!$new_url && $i<4){
     $new_url = $ret_arr->data->link;
 $i++;
 }
-    sleep(1);
+  //  sleep(1);
     return $new_url;
 }
 

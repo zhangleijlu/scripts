@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/garbageRemove.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change beforePath="$PROJECT_DIR$/transfer_data.php" afterPath="$PROJECT_DIR$/transfer_data.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/CssSelectorConverter.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Exception/ExceptionInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Exception/ExpressionErrorException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Exception/InternalErrorException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Exception/ParseException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Exception/SyntaxErrorException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/AbstractNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/AttributeNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/ClassNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/CombinedSelectorNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/ElementNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/FunctionNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/HashNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/NegationNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/NodeInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/PseudoNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/SelectorNode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/Specificity.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/CommentHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HandlerInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HashHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/IdentifierHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/NumberHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/StringHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/WhitespaceHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Parser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/ParserInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Reader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Token.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/TokenStream.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Tokenizer/Tokenizer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Tokenizer/TokenizerEscaping.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Tokenizer/TokenizerPatterns.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/CssSelectorConverterTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/AbstractNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/AttributeNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/ClassNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/CombinedSelectorNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/ElementNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/FunctionNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/HashNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/NegationNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/PseudoNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/SelectorNodeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/SpecificityTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/AbstractHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/CommentHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/HashHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/IdentifierHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/NumberHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/StringHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/WhitespaceHandlerTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/ParserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/ReaderTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Shortcut/ClassParserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Shortcut/ElementParserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Shortcut/EmptyStringParserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Shortcut/HashParserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/TokenStreamTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/XPath/Fixtures/ids.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/XPath/Fixtures/lang.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/XPath/Fixtures/shakespear.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/XPath/TranslatorTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/ExtensionInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Translator.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/TranslatorInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/XPathExpr.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/phpunit.xml.dist" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="transfer_data.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/transfer_data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding>
+                <marker date="1530615946988" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+                <marker date="1530615946988" expanded="true" signature="3285:3350" ph="select * fro... content_ori_201804_newlife101" />
+                <marker date="1530615946988" expanded="true" signature="5497:5632" ph="INSERT INTO `${$article_table}`... " />
+                <marker date="1530615946988" expanded="true" signature="5806:5910" ph="INSERT INTO `${$art_cat_table}`... " />
+                <marker date="1530615946988" expanded="true" signature="6077:6185" ph="INSERT INTO `${$art_user_table}`... " />
+                <marker date="1530615946988" expanded="true" signature="6336:6441" ph="INSERT INTO `${$index_table}`... " />
+                <marker date="1530615946988" expanded="true" signature="7298:7377" ph="update `content_ori_201804_newlife101`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="garbageRemove.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/garbageRemove.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/garbageRemove.php" />
+        <option value="$PROJECT_DIR$/transfer_data.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scripts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="" />
+      <created>1529503905428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529503905428</updated>
+      <workItem from="1529503907306" duration="665000" />
+      <workItem from="1529549312406" duration="2535000" />
+      <workItem from="1529592043781" duration="4260000" />
+      <workItem from="1530590151856" duration="6813000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14273000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16187434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/transfer_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1530615946988" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="3285:3350" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="5497:5632" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="5806:5910" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6077:6185" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6336:6441" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="7298:7377" ph="update `content_ori_201804_newlife101`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transfer_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding>
+            <marker date="1530615946988" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="3285:3350" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="5497:5632" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="5806:5910" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6077:6185" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6336:6441" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="7298:7377" ph="update `content_ori_201804_newlife101`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transfer_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1530615946988" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="3285:3350" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="5497:5632" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="5806:5910" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6077:6185" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6336:6441" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="7298:7377" ph="update `content_ori_201804_newlife101`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/CssSelectorConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/Tests/XPath/TranslatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/XPath/TranslatorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Translator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transfer_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <marker date="1530615946988" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="3285:3350" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1530615946988" expanded="true" signature="5497:5632" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="5806:5910" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6077:6185" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="6336:6441" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1530615946988" expanded="true" signature="7298:7377" ph="update `content_ori_201804_newlife101`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

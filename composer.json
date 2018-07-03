@@ -1,5 +1,0 @@
-{
-    "require": {
-        "symfony/css-selector": "^3.4"
-    }
-}
