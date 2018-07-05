@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/delete_rows.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/delete_rows.php" afterPath="$PROJECT_DIR$/delete_rows.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,14 +34,14 @@
       <file leaf-file-name="delete_rows.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delete_rows.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding>
-                <marker date="1530778831927" expanded="true" signature="172:309" ph="select ori_a... content_ori_201804_newlife101" />
-                <marker date="1530778831927" expanded="true" signature="508:584" ph="DELETE FROM content_ori_201804_newlife101... " />
-                <marker date="1530778831927" expanded="true" signature="508:603" ph="DELETE FROM content_ori_201804_newlife101... " />
-                <marker date="1530778831927" expanded="true" signature="508:621" ph="DELETE FROM content_ori_201804_newlife101... " />
-                <marker date="1530778831927" expanded="true" signature="508:640" ph="DELETE FROM content_ori_201804_newlife101... " />
+                <marker date="1530778962006" expanded="true" signature="172:311" ph="select ori_a... content_ori_201804_newlife101" />
+                <marker date="1530778962006" expanded="true" signature="510:586" ph="DELETE FROM content_ori_201804_newlife101... " />
+                <marker date="1530778962006" expanded="true" signature="510:605" ph="DELETE FROM content_ori_201804_newlife101... " />
+                <marker date="1530778962006" expanded="true" signature="510:623" ph="DELETE FROM content_ori_201804_newlife101... " />
+                <marker date="1530778962006" expanded="true" signature="510:642" ph="DELETE FROM content_ori_201804_newlife101... " />
               </folding>
             </state>
           </provider>
@@ -158,12 +157,12 @@
       <workItem from="1529503907306" duration="665000" />
       <workItem from="1529549312406" duration="2535000" />
       <workItem from="1529592043781" duration="4260000" />
-      <workItem from="1530590151856" duration="17543000" />
+      <workItem from="1530590151856" duration="17672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25003000" />
+    <option name="totallyTimeSpent" value="25132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
@@ -357,14 +356,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delete_rows.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding>
-            <marker date="1530778831927" expanded="true" signature="172:309" ph="select ori_a... content_ori_201804_newlife101" />
-            <marker date="1530778831927" expanded="true" signature="508:584" ph="DELETE FROM content_ori_201804_newlife101... " />
-            <marker date="1530778831927" expanded="true" signature="508:603" ph="DELETE FROM content_ori_201804_newlife101... " />
-            <marker date="1530778831927" expanded="true" signature="508:621" ph="DELETE FROM content_ori_201804_newlife101... " />
-            <marker date="1530778831927" expanded="true" signature="508:640" ph="DELETE FROM content_ori_201804_newlife101... " />
+            <marker date="1530778962006" expanded="true" signature="172:311" ph="select ori_a... content_ori_201804_newlife101" />
+            <marker date="1530778962006" expanded="true" signature="510:586" ph="DELETE FROM content_ori_201804_newlife101... " />
+            <marker date="1530778962006" expanded="true" signature="510:605" ph="DELETE FROM content_ori_201804_newlife101... " />
+            <marker date="1530778962006" expanded="true" signature="510:623" ph="DELETE FROM content_ori_201804_newlife101... " />
+            <marker date="1530778962006" expanded="true" signature="510:642" ph="DELETE FROM content_ori_201804_newlife101... " />
           </folding>
         </state>
       </provider>
