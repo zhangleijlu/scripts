@@ -10,4 +10,7 @@ $site_config =["http://www.newlife101.com.tw" =>
     "http://www.businessweekly.com.tw" =>
         ["cat"=>3, "uid"=>3, "author_name"=>"businessweekly", "cat_slug"=>"business"],
 
+    "https://health.ettoday.net" =>
+        ["cat"=>2, "uid"=>2, "author_name"=>"health", "cat_slug"=>"health"],
+
 ];

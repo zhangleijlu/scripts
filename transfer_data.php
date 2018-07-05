@@ -150,6 +150,9 @@ while(!$new_url && $i<4){
     $new_url = $ret_arr->data->link;
 $i++;
 }
+    if($i==4){
+        exit();
+    }
   //  sleep(1);
     return $new_url;
 }
