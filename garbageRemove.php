@@ -13,22 +13,46 @@ class garbageRemove {
 
         }
         $content = $this->rmYoutubeFrame($content);
+        $content = $this->rmTag($content);
         return $content;
     }
 
     public function  rmYoutubeFrame($content){
         $src_list = ['frame', 'iframe'];
-        $img_urls = [];
+        $src_lists = [];
         foreach ($src_list as $value){
             $pattern="/<$value.*?src=[\'|\"](.*?)[\'|\"].*?>.*?<\/$value>/";
             preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
-            if(isset($match[1])&&!empty($match[1])){
-                $src_lists = $match[1];
-            }
-            foreach ($src_lists as $item) {
+            foreach ($match as $item) {
                 if (strpos($item[1], 'youtube') !== false) {
                     preg_replace($item[0], "", $content);
                 }
+            }
+        }
+
+        foreach ($src_list as $value){
+            $pattern="/<$value.*?src=[\'|\"](.*?)[\'|\"].*?>/";
+            preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
+            foreach ($match as $item) {
+                if (strpos($item[1], 'youtube') !== false) {
+                    preg_replace($item[0], "", $content);
+                }
+            }
+        }
+
+        return $content;
+    }
+
+
+
+    public function  rmTag($content){
+        $tag_list = ['script'];
+        $img_urls = [];
+        foreach ($tag_list as $value){
+            $pattern="/<$value.*?>.*?<\/$value>/";
+            preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
+            foreach ($match as $item) {
+                    preg_replace($item[0], "", $content);
             }
         }
 
