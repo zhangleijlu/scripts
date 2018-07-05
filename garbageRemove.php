@@ -17,13 +17,21 @@ class garbageRemove {
     }
 
     public function  rmYoutubeFrame($content){
-        foreach (["frame", "iframe"] as $value){
-            $selector = $value;
-            $frame = select_elements($selector, $content);
-            if(strpos($frame, "youtube")){
-                $content = str_replace($frame, "", $content);
+        $src_list = ['frame', 'iframe'];
+        $img_urls = [];
+        foreach ($src_list as $value){
+            $pattern="/<$value.*?src=[\'|\"](.*?)[\'|\"].*?>.*?<\/$value>/";
+            preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
+            if(isset($match[1])&&!empty($match[1])){
+                $src_lists = $match[1];
+            }
+            foreach ($src_lists as $item) {
+                if (strpos($item[1], 'youtube') !== false) {
+                    preg_replace($item[0], "", $content);
+                }
             }
         }
+
 
         return $content;
     }

@@ -62,15 +62,16 @@ function img_transfer($cn_content, $ori_site){
 //echo $cn_content;
     $src_list = ['src', 'data-original'];
     $img_urls = [];
-    while ( empty($img_urls) && list($key,$value) = each($src_list)) {
+    foreach ($src_list as $value){
         $pattern="/<img.*?$value=[\'|\"](.*?)[\'|\"].*?[\/]>/";
         preg_match_all($pattern, $cn_content,$match, PREG_PATTERN_ORDER);
         if(isset($match[1])&&!empty($match[1])){
-                $img_urls = $match[1];
+            $img_urls = $match[1];
+            break;
         }
     }
-   
-    var_dump($img_urls);
+
+
     foreach ($img_urls as $img_url){
     if(strpos($img_url,'http')===false){
     	$img_url = $ori_site.$img_url;
