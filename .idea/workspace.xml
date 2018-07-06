@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/string_replace.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/string_replace.php" afterPath="$PROJECT_DIR$/string_replace.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="delete_rows.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delete_rows.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="56" />
               <folding>
                 <marker date="1530778962006" expanded="true" signature="172:311" ph="select ori_a... content_ori_201804_newlife101" />
                 <marker date="1530778962006" expanded="true" signature="510:586" ph="DELETE FROM content_ori_201804_newlife101... " />
@@ -51,10 +50,14 @@
       <file leaf-file-name="string_replace.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/string_replace.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="300">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <marker date="1530849447918" expanded="true" signature="241:325" ph="update yascmf_articles_98... " />
+                <marker date="1530863637748" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
+                <marker date="1530863637748" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
+                <marker date="1530863637748" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
+                <marker date="1530863637748" expanded="true" signature="616:670" ph="UPDATE yascmf_articles_${$i}... " />
+                <marker date="1530863637748" expanded="true" signature="616:687" ph="UPDATE yascmf_articles_${$i}... " />
               </folding>
             </state>
           </provider>
@@ -63,8 +66,8 @@
       <file leaf-file-name="garbageRemove.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/garbageRemove.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="725">
+              <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -171,12 +174,12 @@
       <workItem from="1529503907306" duration="665000" />
       <workItem from="1529549312406" duration="2535000" />
       <workItem from="1529592043781" duration="4260000" />
-      <workItem from="1530590151856" duration="20479000" />
+      <workItem from="1530590151856" duration="24058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27939000" />
+    <option name="totallyTimeSpent" value="31518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
@@ -360,18 +363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delete_rows.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="56" />
           <folding>
             <marker date="1530778962006" expanded="true" signature="172:311" ph="select ori_a... content_ori_201804_newlife101" />
             <marker date="1530778962006" expanded="true" signature="510:586" ph="DELETE FROM content_ori_201804_newlife101... " />
@@ -382,12 +377,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/string_replace.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <marker date="1530849447918" expanded="true" signature="241:325" ph="update yascmf_articles_98... " />
+            <marker date="1530863637748" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
+            <marker date="1530863637748" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
+            <marker date="1530863637748" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
+            <marker date="1530863637748" expanded="true" signature="616:670" ph="UPDATE yascmf_articles_${$i}... " />
+            <marker date="1530863637748" expanded="true" signature="616:687" ph="UPDATE yascmf_articles_${$i}... " />
           </folding>
         </state>
       </provider>
