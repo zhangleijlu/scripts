@@ -14,6 +14,7 @@ class garbageRemove {
         }
         $content = $this->rmYoutubeFrame($content);
         $content = $this->rmTag($content);
+        $content = $this->dataReplace($content);
         return $content;
     }
 
@@ -54,6 +55,16 @@ class garbageRemove {
             foreach ($match as $item) {
                     preg_replace($item[0], "", $content);
             }
+        }
+
+
+        return $content;
+    }
+
+    public function  dataReplace($content){
+        $tag_list = ['data-original='];
+        foreach ($tag_list as $value){
+                preg_replace($value, "", $content);
         }
 
 
