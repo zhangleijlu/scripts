@@ -73,15 +73,15 @@ function img_transfer($cn_content, $ori_site){
 
 
     foreach ($img_urls as $img_url){
-    if(strpos($img_url,'http')===false){
-    	$img_url = $ori_site.$img_url;
-    }
+        if(strpos($img_url,'http')===false){
+            $img_url = $ori_site.$img_url;
+        }
 
         $new_url = img_upload($img_url);
 	 //$new_url = img_upload($img_url);
-if($new_url){
-        $cn_content = str_replace($img_url, $new_url, $cn_content);
-}
+        if($new_url){
+                $cn_content = str_replace($img_url, $new_url, $cn_content);
+        }
     }
 
     return $cn_content;
@@ -138,7 +138,11 @@ if(!file_exists($img)){
 return false;
 }
     $title = "test";
-    $shell = "curl --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer 20a353aa591e9029e92ca7d49515e81fce3677fb\" https://api.imgur.com/3/image";
+    $seret_list = ['20a353aa591e9029e92ca7d49515e81fce3677fb', '897c052631ad9697f65de97656c3e9e39d17587b'];
+    $seret_rand = rand(0, 1);
+    $seret = $seret_list[$seret_rand];
+
+    $shell = "curl --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
     echo $shell;
 $new_url = "";
 $i =0;
