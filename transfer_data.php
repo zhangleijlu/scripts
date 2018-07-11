@@ -138,8 +138,8 @@ if(!file_exists($img)){
 return false;
 }
     $title = "test";
-    $seret_list = ['20a353aa591e9029e92ca7d49515e81fce3677fb', '897c052631ad9697f65de97656c3e9e39d17587b'];
-    $seret_rand = rand(0, 1);
+    $seret_list = ['20a353aa591e9029e92ca7d49515e81fce3677fb', '897c052631ad9697f65de97656c3e9e39d17587b', 'c03390c710b2b66e6a21e96b8374b8a1651d7e17', '9f639e26788b3e29fbac35dd65919675acbe790a'];
+    $seret_rand = rand(0, 3);
     $seret = $seret_list[$seret_rand];
 
     $shell = "curl --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
