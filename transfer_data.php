@@ -157,7 +157,7 @@ $i++;
     if($i==4){
         exit();
     }
-  //  sleep(1);
+    sleep(1);
     return $new_url;
 }
 
