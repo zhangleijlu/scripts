@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/garbageRemove.php" afterPath="$PROJECT_DIR$/garbageRemove.php" />
-      <change beforePath="$PROJECT_DIR$/string_replace.php" afterPath="$PROJECT_DIR$/string_replace.php" />
-      <change beforePath="$PROJECT_DIR$/transfer_data.php" afterPath="$PROJECT_DIR$/transfer_data.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string_replace.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="string_replace.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/string_replace.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="garbageRemove.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="garbageRemove.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/garbageRemove.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+            <state relative-caret-position="770">
+              <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -96,8 +94,8 @@
         <option value="$PROJECT_DIR$/delete_rows.php" />
         <option value="$PROJECT_DIR$/url_image.php" />
         <option value="$PROJECT_DIR$/transfer_data.php" />
-        <option value="$PROJECT_DIR$/garbageRemove.php" />
         <option value="$PROJECT_DIR$/string_replace.php" />
+        <option value="$PROJECT_DIR$/garbageRemove.php" />
       </list>
     </option>
   </component>
@@ -177,12 +175,12 @@
       <workItem from="1529549312406" duration="2535000" />
       <workItem from="1529592043781" duration="4260000" />
       <workItem from="1530590151856" duration="25955000" />
-      <workItem from="1531109557408" duration="13947000" />
+      <workItem from="1531109557408" duration="14032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47362000" />
+    <option name="totallyTimeSpent" value="47447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -409,14 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/string_replace.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -428,6 +418,14 @@
             <marker date="1531304209661" expanded="true" signature="628:682" ph="UPDATE yascmf_articles_${$i}... " />
             <marker date="1531304209661" expanded="true" signature="628:699" ph="UPDATE yascmf_articles_${$i}... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

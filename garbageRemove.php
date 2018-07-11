@@ -64,7 +64,7 @@ class garbageRemove {
     public function  dataReplace($content){
         $tag_list = ['data-original=' => 'src='];
         foreach ($tag_list as $k=>$value){
-            $content = preg_replace($k, $value, $content);
+            $content = str_replace($k, $value, $content);
         }
 
 
