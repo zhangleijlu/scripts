@@ -15,6 +15,8 @@ class garbageRemove {
         $content = $this->rmYoutubeFrame($content);
         $content = $this->rmTag($content);
         $content = $this->dataReplace($content);
+        $content = $this->addTag($content);
+
         return $content;
     }
 
