@@ -47,10 +47,10 @@ class garbageRemove {
     public function addTag($content){
         $src_list = ['frame', 'iframe'];
         foreach ($src_list as $value){
-            $pattern="/<$value(.*?src=[\'|\"].*?)\'|\"].*?)\/>/";
+            $pattern="/<$value.*?src=[\'|\"](.*?)[\'|\"].*?\/>/";
             preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
             foreach ($match as $item) {
-                $new_frame = "<$value ".$item[1]. "> </$value>";
+                $new_frame = str_replace("/>", ">", $item[0])." "."</$value>";
                 $content = str_replace($item[0], $new_frame, $content);
             }
         }

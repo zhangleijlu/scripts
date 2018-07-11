@@ -45,14 +45,14 @@
       <file leaf-file-name="string_replace.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/string_replace.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="510">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
               <folding>
-                <marker date="1531316941357" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
-                <marker date="1531316941357" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
-                <marker date="1531316941357" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
-                <marker date="1531316941357" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
-                <marker date="1531316941357" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
+                <marker date="1531320864729" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
+                <marker date="1531320864729" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
+                <marker date="1531320864729" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
+                <marker date="1531320864729" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
+                <marker date="1531320864729" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
               </folding>
             </state>
           </provider>
@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/garbageRemove.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="57" selection-end-column="5" />
+              <caret line="57" column="5" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -176,12 +176,12 @@
       <workItem from="1529549312406" duration="2535000" />
       <workItem from="1529592043781" duration="4260000" />
       <workItem from="1530590151856" duration="25955000" />
-      <workItem from="1531109557408" duration="20345000" />
+      <workItem from="1531109557408" duration="23027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53760000" />
+    <option name="totallyTimeSpent" value="56442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -269,11 +269,11 @@
         <state relative-caret-position="285">
           <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="40" />
           <folding>
-            <marker date="1531316941357" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
-            <marker date="1531316941357" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
-            <marker date="1531316941357" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
-            <marker date="1531316941357" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
-            <marker date="1531316941357" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
+            <marker date="1531320864729" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
+            <marker date="1531320864729" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
+            <marker date="1531320864729" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
+            <marker date="1531320864729" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
+            <marker date="1531320864729" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
           </folding>
         </state>
       </provider>
@@ -400,6 +400,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/url_image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -408,24 +416,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/garbageRemove.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="57" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/string_replace.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="510">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
-            <marker date="1531316941357" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
-            <marker date="1531316941357" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
-            <marker date="1531316941357" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
-            <marker date="1531316941357" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
-            <marker date="1531316941357" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
+            <marker date="1531320864729" expanded="true" signature="240:312" ph="SELECT * fro... yascmf_articles_" />
+            <marker date="1531320864729" expanded="true" signature="246:312" ph="select * fro... yascmf_articles_" />
+            <marker date="1531320864729" expanded="true" signature="254:312" ph="update yascmf_articles_98... " />
+            <marker date="1531320864729" expanded="true" signature="673:727" ph="UPDATE yascmf_articles_${$i}... " />
+            <marker date="1531320864729" expanded="true" signature="673:744" ph="UPDATE yascmf_articles_${$i}... " />
           </folding>
         </state>
       </provider>
