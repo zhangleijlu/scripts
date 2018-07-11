@@ -16,7 +16,21 @@ for ($i=0;$i<100;$i++){
         if(strpos($content, "data-original=") !==false){
             $new_content = str_replace("data-original=", "src=", $content);
         }
+        $new_content = addTag($new_content);
         $update_sql = "UPDATE yascmf_articles_$i set content = '$new_content' WHERE `id`='$id'";
         $old_mysqli->query($update_sql);
     }
+}
+
+function addTag($content){
+    $src_list = ['frame', 'iframe'];
+    foreach ($src_list as $value){
+        $pattern="/<$value(.*?src=[\'|\"].*?)\'|\"].*?)\/>/";
+        preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
+        foreach ($match as $item) {
+            $new_frame = "<$value ".$item[1]. "> </$value>";
+            $content = str_replace($item[0], $new_frame, $content);
+        }
+    }
+    return $content;
 }
