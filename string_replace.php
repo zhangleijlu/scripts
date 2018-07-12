@@ -23,7 +23,7 @@ for ($i=0;$i<100;$i++){
 }
 
 function addTag($content){
-    $src_list = ['frame', 'iframe'];
+    $src_list = ['frame', 'iframe', 'script'];
     foreach ($src_list as $value){
         $pattern="/<$value.*?src=[\'|\"](.*?)[\'|\"].*?\/>/";
         preg_match_all($pattern, $content,$match, PREG_SET_ORDER);
