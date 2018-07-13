@@ -36,7 +36,7 @@ while ($arr = $ret->fetch_assoc()){
 echo $arr['title'];
     $cn_title = transfer_cn($ori_title);
     $cn_content = transfer_cn($ori_content);
-    $no_img_content = img_transfer($cn_content, $ori_site);
+    $no_img_content = img_transfer($cn_content, $ori_site, $ori_title);
     $three_step_content = inner_url_transfer($no_img_content, $config[$ori_site]['cat_slug']);
     $four_step_content = outer_url_transfer($three_step_content);
     $final_data = [];
@@ -57,7 +57,7 @@ var_dump($final_data);
 //   die();
 }
 
-function img_transfer($cn_content, $ori_site){
+function img_transfer($cn_content, $ori_site, $ori_title){
    // echo $cn_content;
 //echo $cn_content;
     $src_list = ['src', 'data-original'];
@@ -77,7 +77,7 @@ function img_transfer($cn_content, $ori_site){
             $img_url = $ori_site.$img_url;
         }
 
-        $new_url = img_upload($img_url);
+        $new_url = img_upload($img_url, $ori_title);
 	 //$new_url = img_upload($img_url);
         if($new_url){
                 $cn_content = str_replace($img_url, $new_url, $cn_content);
@@ -127,7 +127,7 @@ function outer_url_transfer($content){
 
 
 
-function img_upload($old_url = ''){
+function img_upload($old_url = '', $title){
     $path_parts = pathinfo($old_url);
 echo $old_url;
     $ext = $path_parts['extension'];
@@ -137,7 +137,6 @@ echo $old_url;
 if(!file_exists($img)){
 return false;
 }
-    $title = "test";
     $seret_list = ['20a353aa591e9029e92ca7d49515e81fce3677fb', '897c052631ad9697f65de97656c3e9e39d17587b', 'c03390c710b2b66e6a21e96b8374b8a1651d7e17', '9f639e26788b3e29fbac35dd65919675acbe790a'];
     $seret_rand = rand(0, 3);
     $seret = $seret_list[$seret_rand];
