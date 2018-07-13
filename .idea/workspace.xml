@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/tmp.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/transfer_data.php" afterPath="$PROJECT_DIR$/transfer_data.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,17 +18,27 @@
       <file leaf-file-name="transfer_data.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transfer_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="619">
+              <caret line="143" column="53" lean-forward="false" selection-start-line="143" selection-start-column="53" selection-end-line="143" selection-end-column="53" />
               <folding>
-                <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-                <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-                <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-                <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-                <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-                <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-                <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+                <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+                <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+                <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+                <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+                <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+                <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+                <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tmp.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,6 +108,7 @@
         <option value="$PROJECT_DIR$/url_image.php" />
         <option value="$PROJECT_DIR$/string_replace.php" />
         <option value="$PROJECT_DIR$/garbageRemove.php" />
+        <option value="$PROJECT_DIR$/tmp.php" />
         <option value="$PROJECT_DIR$/transfer_data.php" />
       </list>
     </option>
@@ -176,12 +189,12 @@
       <workItem from="1529549312406" duration="2535000" />
       <workItem from="1529592043781" duration="4260000" />
       <workItem from="1530590151856" duration="25955000" />
-      <workItem from="1531109557408" duration="30475000" />
+      <workItem from="1531109557408" duration="31793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63890000" />
+    <option name="totallyTimeSpent" value="65208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -223,13 +236,13 @@
         <state relative-caret-position="600">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+            <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
           </folding>
         </state>
       </provider>
@@ -283,13 +296,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+            <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
           </folding>
         </state>
       </provider>
@@ -307,13 +320,13 @@
         <state relative-caret-position="900">
           <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
           <folding>
-            <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+            <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
           </folding>
         </state>
       </provider>
@@ -331,13 +344,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+            <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
           </folding>
         </state>
       </provider>
@@ -414,18 +427,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tmp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/transfer_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="619">
+          <caret line="143" column="53" lean-forward="false" selection-start-line="143" selection-start-column="53" selection-end-line="143" selection-end-column="53" />
           <folding>
-            <marker date="1531393933419" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
-            <marker date="1531393933419" expanded="true" signature="5778:5913" ph="INSERT INTO `${$article_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6087:6191" ph="INSERT INTO `${$art_cat_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6358:6466" ph="INSERT INTO `${$art_user_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="6617:6722" ph="INSERT INTO `${$index_table}`... " />
-            <marker date="1531393933419" expanded="true" signature="7579:7658" ph="update `content_ori_201804_newlife101`... " />
+            <marker date="1531471813790" expanded="true" signature="719:793" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="3312:3377" ph="select * fro... content_ori_201804_newlife101" />
+            <marker date="1531471813790" expanded="true" signature="5813:5948" ph="INSERT INTO `${$article_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6122:6226" ph="INSERT INTO `${$art_cat_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6393:6501" ph="INSERT INTO `${$art_user_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="6652:6757" ph="INSERT INTO `${$index_table}`... " />
+            <marker date="1531471813790" expanded="true" signature="7614:7693" ph="update `content_ori_201804_newlife101`... " />
           </folding>
         </state>
       </provider>

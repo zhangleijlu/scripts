@@ -141,7 +141,7 @@ return false;
     $seret_rand = rand(0, 3);
     $seret = $seret_list[$seret_rand];
 
-    $shell = "curl --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
+    $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
     echo $shell;
 $new_url = "";
 $i =0;
