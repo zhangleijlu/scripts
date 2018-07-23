@@ -137,10 +137,10 @@ echo $old_url;
 if(!file_exists($img)){
 return false;
 }
-    $seret_list = ['20a353aa591e9029e92ca7d49515e81fce3677fb', '897c052631ad9697f65de97656c3e9e39d17587b', 'c03390c710b2b66e6a21e96b8374b8a1651d7e17', '9f639e26788b3e29fbac35dd65919675acbe790a'];
+    $seret_list_keys = ['20a353aa591e9029e92ca7d49515e81fce3677fb'=>1, '897c052631ad9697f65de97656c3e9e39d17587b'=>1, 'c03390c710b2b66e6a21e96b8374b8a1651d7e17'=>1, '9f639e26788b3e29fbac35dd65919675acbe790a'=>1];
     $seret_rand = rand(0, 3);
-    $seret = $seret_list[$seret_rand];
-
+    $seret = $seret_list_keys[array_keys($seret_rand)];
+    $seret_list_keys[$seret] +=  1;
     $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
     echo $shell;
 $new_url = "";
@@ -154,6 +154,7 @@ while(!$new_url && $i<4){
 $i++;
 }
     if($i==4){
+        var_dump($seret_list_keys);
         exit();
     }
     sleep(1);
