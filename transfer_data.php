@@ -141,6 +141,9 @@ return false;
     $seret_rand = rand(0, 3);
     $seret = array_keys($seret_list_keys)[$seret_rand];
     $seret_list_keys[$seret] +=  1;
+    if(filesize($img)){
+        return $old_url;
+    }
     $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
     echo $shell;
 $new_url = "";
