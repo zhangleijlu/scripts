@@ -171,12 +171,12 @@ function insert_text($data){
     $art_cat_table = "yascmf_articles_cat_".($data['cat']%10);
     $art_user_table = "yascmf_articles_user_".($data['uid']%10);
     $index_table = 'yascmf_articles_index_1';
-    $title = $data['title'];
-    $slug = $data['slug'];
+    $title = $new_mysqli->real_escape_string($data['title']) ;
+    $slug = $new_mysqli->real_escape_string($data['slug']);
     $cat = $data['cat'];
-    $content = $data['content'];
+    $content = $new_mysqli->real_escape_string($data['content']);
     $uid = $data['uid'];
-    $author_name = $data['author_name'];
+    $author_name = $new_mysqli->real_escape_string($data['author_name']);
     $cat_slug = $data['cat_slug'];
     $content = iconv(mb_detect_encoding($content), "UTF-8", $content);
     //var_dump(strip_tags($content));die();
@@ -184,27 +184,20 @@ function insert_text($data){
 
 
     $sql = "INSERT INTO `$article_table`(`title`,`slug`,`cid`,`description`,`content`,`uid`,`author_name`) ".
-        " values(?, ?, ?, ?, ?, ?, ?)";
-    $stmt = $new_mysqli->prepare($sql);
-    $stmt->bind_param('sddssds', $title, $slug, $cat, $description,$content,$uid,$author_name);
-    $stmt->execute();
+        " values($title, $slug, $cat, $description, $content, $uid, $author_name)";
+    $stmt = $new_mysqli->query($sql);
 
     $sql = "INSERT INTO `$art_cat_table`(`uid`, `cid`, `slug`, `title`, `description`)"
-    ." values(?, ?, ?, ?, ?)";
-    $stmt = $new_mysqli->prepare($sql); var_dump($stmt);
-    $stmt->bind_param('dddss', $uid, $cat, $slug, $title, $description);
-    $stmt->execute();
+    ." values($uid, $cat, $slug, $title, $description)";
+    $stmt = $new_mysqli->query($sql); var_dump($stmt);
+
     $sql = "INSERT INTO `$art_user_table`(`uid`, `cid`, `slug`, `title`,`description`)"
-        ." values(?, ?, ?, ?, ?)";
-    $stmt = $new_mysqli->prepare($sql);
-    $stmt->bind_param('dddss', $uid, $cat, $slug, $title, $description);
-    $stmt->execute();
+        ." values($uid, $cat, $slug, $title, $description)";
+    $stmt = $new_mysqli->query($sql);
 
     $sql = "INSERT INTO `$index_table`(`uid`, `cid`, `slug`, `title`,`description`)"
-        ." values(?, ?, ?, ?, ?)";
-    $stmt = $new_mysqli->prepare($sql);
-    $stmt->bind_param('dddss', $uid, $cat, $slug, $title, $description);
-    $stmt->execute();
+        ." values($uid, $cat, $slug, $title, $description)";
+    $stmt = $new_mysqli->query($sql);
   //  global $redis;
 //    $redis->set("YASCMF_BASE_INDEZ_TABLE_NAME",$index_table);
     $url = "http://www.zawenblog.com/$cat_slug/$slug.html";
