@@ -13,7 +13,7 @@ require "./libs/urlPostClass.php";
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
 if(strpos($hostname,"instance") !==false){
-    $new_mysqli = new mysqli("180.76.174.128","root","root", "yascmf_base");
+    $new_mysqli = new mysqli("180.76.174.128","root","asdf", "yascmf_base");
 }else{
     $new_mysqli = new mysqli("180.76.174.128","root","asdf", "yascmf_base");
 }
