@@ -12,7 +12,7 @@ class urlPostClass{
 
     public function __construct(){
         $this->redis = new Redis();
-        $this->redis->connect("67.218.158.33");
+        $this->redis->connect("180.76.174.128");
     }
 
     public function main($url){
