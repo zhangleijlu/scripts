@@ -8,6 +8,7 @@
 require "./config.php";
 require "./selector.inc";
 require "./garbageRemove.php";
+require "./libs/urlPostClass.php";
 
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
@@ -17,6 +18,7 @@ if(strpos($hostname,"instance") !==false){
     $new_mysqli = new mysqli("180.76.174.128","root","asdf", "yascmf_base");
 }
 $redis = new Redis();
+$urlPostClass = new urlPostClass();
 if(strpos($hostname,"instance") !==false){
     $redis->connect("180.76.174.128");
 }else{
@@ -145,7 +147,9 @@ return false;
     if(!filesize($img)){
         return $old_url;
     }
-    $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
+  //  $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
+    $shell = "curl  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
+
     echo $shell;
 $new_url = "";
 $i =0;
@@ -166,7 +170,7 @@ $i++;
 }
 
 function insert_text($data){
-    global $new_mysqli;
+    global $new_mysqli,$urlPostClass;
     $article_table = "yascmf_articles_".($data['slug']%100);
     $art_cat_table = "yascmf_articles_cat_".($data['cat']%10);
     $art_user_table = "yascmf_articles_user_".($data['uid']%10);
@@ -202,7 +206,7 @@ function insert_text($data){
 //    $redis->set("YASCMF_BASE_INDEZ_TABLE_NAME",$index_table);
     $url = "http://www.zawenblog.com/$cat_slug/$slug.html";
     echo $url;
-    url_post($url);
+    $urlPostClass->main($url);
 }
 
 function url_post($url){
