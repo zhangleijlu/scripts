@@ -189,7 +189,7 @@ function insert_text($data){
 
     $sql = "INSERT INTO `$article_table`(`title`,`slug`,`cid`,`description`,`content`,`uid`,`author_name`) ".
         " values($title, $slug, $cat, $description, $content, $uid, $author_name)";
-    $stmt = $new_mysqli->query($sql);
+    $stmt = $new_mysqli->query($sql); var_dump($stmt);
 
     $sql = "INSERT INTO `$art_cat_table`(`uid`, `cid`, `slug`, `title`, `description`)"
     ." values($uid, $cat, $slug, $title, $description)";
@@ -206,23 +206,7 @@ function insert_text($data){
 //    $redis->set("YASCMF_BASE_INDEZ_TABLE_NAME",$index_table);
     $url = "http://www.zawenblog.com/$cat_slug/$slug.html";
     echo $url;
-    $urlPostClass->main($url);
-}
-
-function url_post($url){
-    $api = 'http://data.zz.baidu.com/urls?site=www.zawenblog.com&token=Ny7YSKqDi9LbLbeR';
-    $ch = curl_init();
-    $options =  array(
-        CURLOPT_URL => $api,
-        CURLOPT_POST => true,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_POSTFIELDS => $url,
-        CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
-    );
-    curl_setopt_array($ch, $options);
-echo $url;
-    $result = curl_exec($ch);
-    echo $result;
+    //$urlPostClass->main($url);
 }
 
 function change_status($slug){
