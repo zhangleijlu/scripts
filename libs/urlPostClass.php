@@ -33,11 +33,11 @@ class urlPostClass{
         }
 
         if($realtime_num<10){
-        //    $this->post($url, self::REALTIME_API);
+            $this->post($url, self::REALTIME_API);
         }else{
-         //   $this->post($url, self::BATCH_API);
+           $this->post($url, self::BATCH_API);
         }
-       // $this->redis->setex($realtime_key,24*3600, date('Ymd')."-".($realtime_num+1));
+        $this->redis->setex($realtime_key,24*3600, date('Ymd')."-".($realtime_num+1));
     }
 
     public function  post($url,$api){

@@ -188,25 +188,25 @@ function insert_text($data){
 
 
     $sql = "INSERT INTO `$article_table`(`title`,`slug`,`cid`,`description`,`content`,`uid`,`author_name`) ".
-        " values($title, $slug, $cat, $description, $content, $uid, $author_name)";
-    $stmt = $new_mysqli->query($sql); var_dump($stmt);
+        " values('$title', '$slug', $cat, '$description', '$content', $uid, '$author_name')";
+    $stmt = $new_mysqli->query($sql);
 
     $sql = "INSERT INTO `$art_cat_table`(`uid`, `cid`, `slug`, `title`, `description`)"
-    ." values($uid, $cat, $slug, $title, $description)";
+    ." values($uid, $cat, $slug, '$title', '$description')";
     $stmt = $new_mysqli->query($sql); var_dump($stmt);
 
     $sql = "INSERT INTO `$art_user_table`(`uid`, `cid`, `slug`, `title`,`description`)"
-        ." values($uid, $cat, $slug, $title, $description)";
+        ." values($uid, $cat, $slug, '$title', '$description')";
     $stmt = $new_mysqli->query($sql);
 
     $sql = "INSERT INTO `$index_table`(`uid`, `cid`, `slug`, `title`,`description`)"
-        ." values($uid, $cat, $slug, $title, $description)";
+        ." values($uid, $cat, $slug, '$title', '$description')";
     $stmt = $new_mysqli->query($sql);
   //  global $redis;
 //    $redis->set("YASCMF_BASE_INDEZ_TABLE_NAME",$index_table);
     $url = "http://www.zawenblog.com/$cat_slug/$slug.html";
     echo $url;
-    //$urlPostClass->main($url);
+    $urlPostClass->main($url);
 }
 
 function change_status($slug){
