@@ -20,7 +20,7 @@ if(strpos($hostname,"instance") !==false){
 $redis = new Redis();
 $urlPostClass = new urlPostClass();
 if(strpos($hostname,"instance") !==false){
-    $redis->connect("180.76.174.128");
+    $redis->connect("67.218.158.33");
 }else{
 //    $redis->connect("180.76.174.128");
 }
