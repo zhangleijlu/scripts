@@ -140,7 +140,9 @@ if(!file_exists($img)){
 return false;
 }
     $seret_list_keys = ['20a353aa591e9029e92ca7d49515e81fce3677fb'=>1, '897c052631ad9697f65de97656c3e9e39d17587b'=>1, 'c03390c710b2b66e6a21e96b8374b8a1651d7e17'=>1, '9f639e26788b3e29fbac35dd65919675acbe790a'=>1,
-                        'f9de32b21e416889826b44fe8751dc1f95441a1f'=>1, '0b773d3980a1761e823ad2e6365d9a04ff4efaf8'=>1,'486177d38f67567baaa7dc4a03157f6b5668fc10'=>1, 'd2d66be94417b4b57444214d50e80f7ea2f52a19'=>1];
+                        'f9de32b21e416889826b44fe8751dc1f95441a1f'=>1, '0b773d3980a1761e823ad2e6365d9a04ff4efaf8'=>1,'486177d38f67567baaa7dc4a03157f6b5668fc10'=>1, 'd2d66be94417b4b57444214d50e80f7ea2f52a19'=>1,
+                        '57c2fd641a26cd1d798221d3694ff5d0a8d6d1bf'=>1, '6bf95d8dfdf6cef43afb9ea9a8d05dcef6ab79eb'=>1,
+                        ];
     $seret_rand = rand(0, 7);
     $seret = array_keys($seret_list_keys)[$seret_rand];
     $seret_list_keys[$seret] +=  1;
