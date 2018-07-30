@@ -8,6 +8,7 @@ $base64 = base64_encode($data);
 curl_setopt_array($curl, array(
     CURLOPT_URL => "https://api.imgur.com/3/image",
     CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_PROXY => '127.0.0.1:3128',
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
     CURLOPT_TIMEOUT => 30,
