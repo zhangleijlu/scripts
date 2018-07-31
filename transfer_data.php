@@ -22,7 +22,7 @@ $urlPostClass = new urlPostClass();
 if(strpos($hostname,"instance") !==false){
     $redis->connect("67.218.158.33");
 }else{
-//    $redis->connect("180.76.174.128");
+    $redis->connect("67.218.158.33");
 }
 
 $old_mysqli->query("set names utf8");
@@ -191,7 +191,7 @@ function insert_text($data){
 
     $sql = "INSERT INTO `$article_table`(`title`,`slug`,`cid`,`description`,`content`,`uid`,`author_name`) ".
         " values('$title', '$slug', $cat, '$description', '$content', $uid, '$author_name')";
-    $stmt = $new_mysqli->query($sql);
+    $stmt = $new_mysqli->query($sql); var_dump($stmt);
 
     $sql = "INSERT INTO `$art_cat_table`(`uid`, `cid`, `slug`, `title`, `description`)"
     ." values($uid, $cat, $slug, '$title', '$description')";
