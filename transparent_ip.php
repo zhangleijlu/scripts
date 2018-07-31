@@ -17,8 +17,8 @@ if(preg_match_all('/<tr>(.*?)<\/tr>/', $tbody, $matches)){
             $ip = $tr_matches[1][0];
             $port = $tr_matches[1][1];
             if(check($ip, $port)){
-                echo $ip+" "+$port+"\n";
-                fwrite($fh, $ip+" "+$port+"\n");
+                echo $ip." ".$port."\n";
+                fwrite($fh, $ip." ".$port."\n");
             }
         }
     }
