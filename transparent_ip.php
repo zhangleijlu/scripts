@@ -12,7 +12,7 @@ if(preg_match('/<tbody>(.*?)<\/tbody>/', $html, $matches)){
 $fh = fopen('transparent_ip.txt', 'w');
 if(preg_match_all('/<tr>(.*?)<\/tr>/', $tbody, $matches)){
     foreach ($matches[1] as $tr){
-        preg_match_all('/<td>(.*?)<\/td>/', $tr, $tr_matches);
+        preg_match_all('/<td>(.*?)<\/td>/', $tr, $tr_matches); var_dump($tr_matches);
         if($tr_matches[1][4] == 'transparent'){
             $ip = $tr_matches[1][0];
             $port = $tr_matches[1][1];
