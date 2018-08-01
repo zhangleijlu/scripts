@@ -56,8 +56,8 @@ echo $arr['title'];
     $final_data['author_name'] = $config[$ori_site]['author_name'];
     $final_data['cat_slug'] = $config[$ori_site]['cat_slug'];
 var_dump($final_data);
-  //  insert_text($final_data);
-// change_status( $arr['slug']);
+    insert_text($final_data);
+ change_status( $arr['slug']);
 //   die();
 }
 

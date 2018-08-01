@@ -15,6 +15,7 @@ class sourcePost{
         }
         $proxies[] = $arr;
         $this->transparent_ip = $proxies;
+        require './ImgCompressor.class.php';
     }
 
     public function image_post($path, $seret){
@@ -67,6 +68,7 @@ class sourcePost{
         $img = realpath(__DIR__ . "/../") .'/flower.'.$ext;
         unlink($img);
         file_put_contents($img, file_get_contents($old_url));
+        $this->compressImg($img);
         if(!file_exists($img)){
             return false;
         }
@@ -92,7 +94,7 @@ class sourcePost{
             }
             $ret_arr = json_decode($ret);
             var_dump($ret_arr);
-            $new_url = $ret_arr->data->link; echo  $new_url;
+            $new_url = $ret_arr->data->link;
             $i++;
         }
         if($i==4){
@@ -103,7 +105,21 @@ class sourcePost{
         return $new_url;
     }
 
+    public function compressImg($img){
+        $setting = array(
+            'directory' => realpath(__DIR__.'/../image/'), // directory file compressed output
+            'file_type' => array( // file format allowed
+                'image/jpeg',
+                'image/png',
+                'image/gif'
+            )
+        );
+        $ImgCompressor = new ImgCompressor($setting);
+        $result = $ImgCompressor->run($img, 'jpg', 5);
+        return $result['data']['compressed']['image'];
 
+
+    }
 
 
 }
