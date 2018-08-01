@@ -9,7 +9,7 @@ require "./config.php";
 require "./selector.inc";
 require "./garbageRemove.php";
 require "./libs/urlPostClass.php";
-require "";
+require "./libs/imagePost.php";
 
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
