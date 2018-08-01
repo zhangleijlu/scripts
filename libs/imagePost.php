@@ -7,7 +7,14 @@ class sourcePost{
                                 ];
     public function __construct()
     {
-        $this->transparent_ip = $this->getProxy();
+        $transparent_ip_file = realpath(__DIR__."/../transparent_ip.txt");
+        $fh = fopen($transparent_ip_file, 'r');
+        $proxies = [];
+        while ($line = trim(fgets($fh))){
+            $arr = explode(' ', $line);
+        }
+        $proxies[] = $arr;
+        $this->transparent_ip = $proxies;
     }
 
     public function image_post($path, $seret){
@@ -49,13 +56,7 @@ class sourcePost{
     }
 
     private function getProxy($type="transparent"){
-        $transparent_ip_file = realpath(__DIR__."/../transparent_ip.txt");
-        $fh = fopen($transparent_ip_file, 'r');
-        $proxies = [];
-        while ($line = trim(fgets($fh))){
-            $arr = explode(' ', $line);
-        }
-        $proxies[] = $arr;
+
 
     }
 
