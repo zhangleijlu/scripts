@@ -43,6 +43,7 @@ class sourcePost{
             echo "cURL Error #:" . $err;
             return false;
         } else {
+            echo $response;
             return $response;
         }
     }
@@ -62,7 +63,7 @@ class sourcePost{
         $path_parts = pathinfo($old_url);
         echo $old_url;
         $ext = $path_parts['extension'];
-        $img = __DIR__ . "imagePost.php/" .'flower.'.$ext;
+        $img = realpath(__DIR__ . "/../") .'flower.'.$ext;
         unlink($img);
         file_put_contents($img, file_get_contents($old_url));
         if(!file_exists($img)){
@@ -89,7 +90,7 @@ class sourcePost{
                 exit();
             }
             $ret_arr = json_decode($ret);
-
+            var_dump($ret_arr);
             $new_url = $ret_arr->data->link;
             $i++;
         }
