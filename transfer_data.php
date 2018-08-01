@@ -9,6 +9,7 @@ require "./config.php";
 require "./selector.inc";
 require "./garbageRemove.php";
 require "./libs/urlPostClass.php";
+require "";
 
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
@@ -19,6 +20,7 @@ if(strpos($hostname,"instance") !==false){
 }
 $redis = new Redis();
 $urlPostClass = new urlPostClass();
+$sourcePost = new sourcePost();
 if(strpos($hostname,"instance") !==false){
     $redis->connect("67.218.158.33");
 }else{
@@ -54,16 +56,18 @@ echo $arr['title'];
     $final_data['author_name'] = $config[$ori_site]['author_name'];
     $final_data['cat_slug'] = $config[$ori_site]['cat_slug'];
 var_dump($final_data);
-    insert_text($final_data);
- change_status( $arr['slug']);
+  //  insert_text($final_data);
+// change_status( $arr['slug']);
 //   die();
 }
 
 function img_transfer($cn_content, $ori_site, $ori_title){
    // echo $cn_content;
 //echo $cn_content;
+    global $sourcePost;
     $src_list = ['src', 'data-original'];
     $img_urls = [];
+
     foreach ($src_list as $value){
         $pattern="/<img.*?$value=[\'|\"](.*?)[\'|\"].*?[\/]>/";
         preg_match_all($pattern, $cn_content,$match, PREG_PATTERN_ORDER);
@@ -79,7 +83,7 @@ function img_transfer($cn_content, $ori_site, $ori_title){
             $img_url = $ori_site.$img_url;
         }
 
-        $new_url = img_upload($img_url, $ori_title);
+        $new_url = $sourcePost->img_upload($img_url, $ori_title);
 	 //$new_url = img_upload($img_url);
         if($new_url){
                 $cn_content = str_replace($img_url, $new_url, $cn_content);
@@ -129,47 +133,6 @@ function outer_url_transfer($content){
 
 
 
-function img_upload($old_url = '', $title){
-    $path_parts = pathinfo($old_url);
-echo $old_url;
-    $ext = $path_parts['extension'];
-    $img = __DIR__."/".'flower.'.$ext;
-    unlink($img);
-    file_put_contents($img, file_get_contents($old_url));
-if(!file_exists($img)){
-return false;
-}
-    $seret_list_keys = ['20a353aa591e9029e92ca7d49515e81fce3677fb'=>1, '897c052631ad9697f65de97656c3e9e39d17587b'=>1, 'c03390c710b2b66e6a21e96b8374b8a1651d7e17'=>1, '9f639e26788b3e29fbac35dd65919675acbe790a'=>1,
-                        'f9de32b21e416889826b44fe8751dc1f95441a1f'=>1, '0b773d3980a1761e823ad2e6365d9a04ff4efaf8'=>1,'486177d38f67567baaa7dc4a03157f6b5668fc10'=>1, 'd2d66be94417b4b57444214d50e80f7ea2f52a19'=>1,
-                        '57c2fd641a26cd1d798221d3694ff5d0a8d6d1bf'=>1, '6bf95d8dfdf6cef43afb9ea9a8d05dcef6ab79eb'=>1,
-                        ];
-    $seret_rand = rand(0, 7);
-    $seret = array_keys($seret_list_keys)[$seret_rand];
-    $seret_list_keys[$seret] +=  1;
-    if(!filesize($img)){
-        return $old_url;
-    }
-  //  $shell = "curl --proxy \"http://127.0.0.1:3128\"  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
-    $shell = "curl  --compressed  -fsSL --stderr - -F 'title=${title}' -F 'image=@\"$img\"'  -H \"Authorization: Bearer $seret\" https://api.imgur.com/3/image";
-
-    echo $shell;
-$new_url = "";
-$i =0;
-while(!$new_url && $i<4){
-    $ret = shell_exec($shell);
-    $ret = stripslashes($ret);
-    $ret_arr = json_decode($ret);
-
-    $new_url = $ret_arr->data->link;
-$i++;
-}
-    if($i==4){
-        var_dump($seret_list_keys);
-        exit();
-    }
-    sleep(1);
-    return $new_url;
-}
 
 function insert_text($data){
     global $new_mysqli,$urlPostClass;
