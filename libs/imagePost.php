@@ -63,7 +63,7 @@ class sourcePost{
         $path_parts = pathinfo($old_url);
         echo $old_url;
         $ext = $path_parts['extension'];
-        $img = realpath(__DIR__ . "/../") .'flower.'.$ext;
+        $img = realpath(__DIR__ . "/../") .'/flower.'.$ext;
         unlink($img);
         file_put_contents($img, file_get_contents($old_url));
         if(!file_exists($img)){
