@@ -92,7 +92,7 @@ class sourcePost{
             }
             $ret_arr = json_decode($ret);
             var_dump($ret_arr);
-            $new_url = $ret_arr->data->link;
+            $new_url = $ret_arr->data->link; echo  $new_url;
             $i++;
         }
         if($i==4){
