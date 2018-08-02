@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9d8928-8eb0-4173-905b-d8c25543f06c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/test_image_compress.php" afterPath="$PROJECT_DIR$/test/test_image_compress.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/test/test_image_compress.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -227,12 +226,12 @@
       <workItem from="1532247791338" duration="1605000" />
       <workItem from="1532312274753" duration="18104000" />
       <workItem from="1532853945007" duration="31873000" />
-      <workItem from="1533176379429" duration="988000" />
+      <workItem from="1533176379429" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117990000" />
+    <option name="totallyTimeSpent" value="118053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
@@ -667,7 +666,7 @@
     <entry file="file://$PROJECT_DIR$/test/test_image_compress.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
