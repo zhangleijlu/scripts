@@ -5,7 +5,7 @@
  * Date: 2018/8/1
  * Time: 下午6:53
  */
-require '../libs/ImgCompressor.class.php';
+require __DIR__.'../libs/ImgCompressor.class.php';
 
 compressImg(realpath(__DIR__.'/../flower.jpg'));
 function compressImg($img){
