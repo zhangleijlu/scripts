@@ -15,7 +15,7 @@ class sourcePost{
         }
         $proxies[] = $arr;
         $this->transparent_ip = $proxies;
-        require './ImgCompressor.class.php';
+        require __DIR__.'/ImgCompressor.class.php';
     }
 
     public function image_post($path, $seret){
