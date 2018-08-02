@@ -5,11 +5,11 @@
  * Date: 2018/4/26
  * Time: 下午4:01
  */
-require "./config.php";
-require "./selector.inc";
-require "./garbageRemove.php";
-require "./libs/urlPostClass.php";
-require "./libs/imagePost.php";
+require __DIR__."./config.php";
+require __DIR__."./selector.inc";
+require __DIR__."./garbageRemove.php";
+require __DIR__."./libs/urlPostClass.php";
+require __DIR__."./libs/imagePost.php";
 
 $hostname = gethostname();
 $old_mysqli = new mysqli("67.218.158.33","root","root", "content_ori");
